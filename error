@@ -1,0 +1,62 @@
+root@osmc:/etc/default# sudo bash autosetup.sh
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+gpg: pub  4096R/7953A455 2017-06-15  David Cooper <david@dtcooper.com>
+OK
+deb https://dtcooper.github.io/raspotify jessie main
+Ign http://ftp.debian.org jessie InRelease
+Hit http://ftp.debian.org jessie-updates InRelease
+Hit http://security.debian.org jessie/updates InRelease
+Hit https://dtcooper.github.io jessie InRelease
+Hit http://apt.osmc.tv jessie InRelease
+Hit http://ftp.debian.org jessie Release.gpg
+Hit http://ftp.debian.org jessie Release
+Get:1 http://ftp.debian.org jessie-updates/main arm64 Packages/DiffIndex [9376 B]
+Hit http://ftp.debian.org jessie-updates/contrib arm64 Packages
+Get:2 http://ftp.debian.org jessie-updates/non-free arm64 Packages/DiffIndex [736 B]
+Get:3 http://ftp.debian.org jessie-updates/main armhf Packages/DiffIndex [9376 B]
+Hit http://ftp.debian.org jessie-updates/contrib armhf Packages
+Get:4 http://ftp.debian.org jessie-updates/non-free armhf Packages/DiffIndex [736 B]
+Hit http://ftp.debian.org jessie-updates/contrib Translation-en
+Get:5 http://ftp.debian.org jessie-updates/main Translation-en/DiffIndex [3688 B]
+Get:6 http://ftp.debian.org jessie-updates/non-free Translation-en/DiffIndex [736 B]
+Hit http://security.debian.org jessie/updates/non-free arm64 Packages
+Get:7 http://apt.osmc.tv jessie/main arm64 Packages/DiffIndex [2023 B]
+Get:8 http://apt.osmc.tv jessie/main armhf Packages/DiffIndex [2023 B]
+Hit http://security.debian.org jessie/updates/non-free armhf Packages
+Hit http://security.debian.org jessie/updates/non-free Translation-en
+Hit http://security.debian.org jessie/updates/main arm64 Packages
+Hit http://security.debian.org jessie/updates/contrib arm64 Packages
+Hit http://security.debian.org jessie/updates/main armhf Packages
+Ign http://apt.osmc.tv jessie/main Translation-en
+Hit http://security.debian.org jessie/updates/contrib armhf Packages
+Hit http://ftp.debian.org jessie/main arm64 Packages
+Hit http://security.debian.org jessie/updates/contrib Translation-en
+Hit http://ftp.debian.org jessie/contrib arm64 Packages
+Hit http://security.debian.org jessie/updates/main Translation-en
+Hit http://ftp.debian.org jessie/non-free arm64 Packages
+Hit http://ftp.debian.org jessie/main armhf Packages
+Hit http://ftp.debian.org jessie/contrib armhf Packages
+Hit http://ftp.debian.org jessie/non-free armhf Packages
+Hit http://ftp.debian.org jessie/contrib Translation-en
+Hit http://ftp.debian.org jessie/main Translation-en
+Hit http://ftp.debian.org jessie/non-free Translation-en
+Fetched 28.7 kB in 11s (2570 B/s)
+W: Failed to fetch https://dtcooper.github.io/raspotify/dists/jessie/InRelease  Unable to find expected entry 'main/binary-arm64/Packages' in Release file (Wrong sources.list entry or malformed file)
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+apt-transport-https is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package raspotify
+sed: can't read /etc/default/raspotify: No such file or directory
+sed: can't read /etc/default/raspotify: No such file or directory
+Failed to restart raspotify.service: Unit raspotify.service failed to load: No such file or directory.
